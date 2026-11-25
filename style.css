@@ -1,0 +1,39 @@
+/* Casa Royale Hostel - main style sheet */
+:root{--teal:#0f4c5c;--amber:#f2a541;--bg:#f3f7f8;--ink:#17262b;--card:#fff;--line:#cfdcdf}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--teal);line-height:1.25}
+h1{font-size:2rem}
+a{color:var(--teal)}
+img{max-width:100%;height:auto}
+.site-header{background:var(--teal);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem 1rem}
+.brand{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:bold;font-size:1.1rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem}
+nav a{display:block;color:#fff;text-decoration:none;padding:.4rem .7rem;border-radius:4px}
+nav a:hover,nav a[aria-current]{background:var(--amber);color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+main{max-width:1000px;margin:0 auto;padding:1.5rem 1rem}
+section{margin-bottom:2rem}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--amber);padding:1rem;margin:0 0 .8rem}
+.card h3{margin-top:0}
+.btn{display:inline-block;background:var(--amber);color:var(--ink);font-weight:bold;border:0;padding:.7rem 1.2rem;text-decoration:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#ffc366}
+.list{padding-left:1.3rem}
+.note{background:#e1edef;padding:1rem}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card)}
+caption{text-align:left;font-weight:bold;padding:.5rem 0}
+th,td{border:1px solid var(--line);padding:.6rem;text-align:left}
+thead th{background:var(--teal);color:#fff}
+fieldset{border:1px solid var(--line);background:var(--card);padding:1rem;max-width:560px}
+label{display:block;font-weight:bold;margin-bottom:.25rem}
+input,select,textarea{width:100%;padding:.55rem;border:1px solid #6f878d;font:inherit}
+.site-footer{background:var(--teal);color:#fff;text-align:center;padding:1rem;font-size:.9rem}
+.site-footer p{margin:.2rem 0}
+@media (max-width:700px){
+.hero{grid-template-columns:1fr}
+h1{font-size:1.6rem}
+.site-header{flex-direction:column;align-items:flex-start}
+}
